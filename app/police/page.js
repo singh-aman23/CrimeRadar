@@ -8,7 +8,7 @@ const PolicePage = () => {
 
   useEffect(() => {
     // Connect to WebSocket server
-    const socket = new WebSocket('ws://localhost:3001');
+    const socket = new WebSocket('wss://crime-radar-websocket.onrender.com');
 
     // Listen for messages from the WebSocket server
     socket.onmessage = async (event) => {
